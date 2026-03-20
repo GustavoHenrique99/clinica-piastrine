@@ -49,7 +49,9 @@
     <header class="fixed w-full top-0 z-50 transition-all duration-300 glass-effect">
         <div class="container mx-auto px-6 py-4 flex justify-between items-center">
             <div class="flex items-center gap-2">
-                <img src="img/piastrine verde.png" alt="Logo Clínica Piastrine" class="h-10 w-auto">
+                <a href="#" class="cursor-pointer transition-transform hover:scale-105">
+                    <img src="img/piastrine verde.png" alt="Logo Clínica Piastrine" class="h-10 w-auto">
+                </a>
             </div>
             <nav class="hidden md:flex gap-8">
                 <a href="#sobre" class="text-sm font-medium hover:text-marrom transition-colors">Sobre</a>
@@ -123,8 +125,10 @@
         <div class="container mx-auto px-6">
             <div class="flex flex-col lg:flex-row items-center gap-16">
                 <div class="lg:w-1/2 relative" data-aos="fade-right">
-                    <div class="absolute inset-0 bg-marrom translate-x-4 translate-y-4 rounded-lg -z-10"></div>
-                    <img src="https://images.unsplash.com/photo-1622253692010-333f2da6031d?q=80&w=1964&auto=format&fit=crop" alt="Dr. Daniel Calais" class="rounded-lg shadow-xl w-full object-cover h-[500px]">
+                    <div class="absolute inset-0 bg-verde translate-x-4 translate-y-4 rounded-lg -z-10"></div>
+                    <div class="bg-marrom rounded-lg shadow-xl overflow-hidden flex items-end">
+                        <img src="img/daniel-calais.jpg" alt="Dr. Daniel Calais" class="w-full h-auto">
+                    </div>
                 </div>
                 <div class="lg:w-1/2" data-aos="fade-left">
                     <h4 class="text-marrom font-semibold tracking-widest uppercase text-sm mb-2">Sobre o Especialista</h4>
@@ -135,13 +139,6 @@
                     <p class="mb-8 text-gray-600 leading-relaxed">
                         Acreditamos que a verdadeira beleza reflete a saúde que cultivamos por dentro. Nossa trajetória é marcada pelo refinamento técnico, adoção de tecnologias de ponta e um olhar humano que respeita a individualidade de cada paciente, garantindo longevidade e resultados naturais.
                     </p>
-                    <div class="flex items-center gap-4">
-                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/12/User_icon_2.svg/1024px-User_icon_2.svg.png" alt="Assinatura" class="h-12 opacity-50 grayscale">
-                        <div>
-                            <p class="font-serif font-bold text-verde text-lg">Dr. Daniel Calais</p>
-                            <p class="text-sm text-marrom">Diretor Técnico Clínico</p>
-                        </div>
-                    </div>
                 </div>
             </div>
         </div>
@@ -241,30 +238,22 @@
 
     <footer id="contato" class="bg-[#002826] text-bege/80 pt-20 pb-10 border-t border-verde">
         <div class="container mx-auto px-6">
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-16">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12 mb-16">
                 
                 <div class="lg:col-span-1">
                     <div class="flex items-center gap-2 mb-6">
-                        <img src="img/piastrine branca.png" alt="Logo Clínica Piastrine" class="h-12 w-auto">
+                        <a href="#" class="cursor-pointer transition-transform hover:scale-105">
+                            <img src="img/piastrine branca.png" alt="Logo Clínica Piastrine" class="h-12 w-auto">
+                        </a>
                     </div>
-                    <p class="text-sm mb-6">Sua saúde, beleza e longevidade tratadas com a seriedade e o requinte que você merece.</p>
+                    <p class="text-sm mb-6 pr-4">Sua saúde, beleza e longevidade tratadas com a seriedade e o requinte que você merece.</p>
                     <div class="flex gap-4">
                         <a href="#" class="w-10 h-10 rounded-full bg-verde flex items-center justify-center hover:bg-marrom hover:text-white transition-colors"><i class="fa-brands fa-instagram"></i></a>
                         <a href="#" class="w-10 h-10 rounded-full bg-verde flex items-center justify-center hover:bg-marrom hover:text-white transition-colors"><i class="fa-brands fa-facebook-f"></i></a>
                     </div>
                 </div>
 
-                <div>
-                    <h4 class="font-serif text-lg text-bege mb-6">Links Rápidos</h4>
-                    <ul class="space-y-3">
-                        <li><a href="#sobre" class="hover:text-marrom transition-colors">Sobre a Clínica</a></li>
-                        <li><a href="#servicos" class="hover:text-marrom transition-colors">Tratamentos</a></li>
-                        <li><a href="#parceiros" class="hover:text-marrom transition-colors">Corpo Clínico</a></li>
-                        <li><a href="#" class="hover:text-marrom transition-colors">Política de Privacidade</a></li>
-                    </ul>
-                </div>
-
-                <div class="lg:col-span-2">
+                <div class="lg:col-span-1">
                     <h4 class="font-serif text-lg text-bege mb-6">Fale Conosco</h4>
                     <ul class="space-y-4">
                         <li class="flex items-start gap-4">
@@ -281,11 +270,17 @@
                         </li>
                     </ul>
                 </div>
+
+                <div class="lg:col-span-1 flex flex-col justify-center">
+                    <h4 class="font-serif text-2xl text-bege mb-4 leading-tight">Pronto para cuidar da sua saúde?</h4>
+                    <a href="https://wa.me/5531999999999" target="_blank" class="inline-block bg-marrom text-bege text-center px-6 py-3 rounded-md font-medium text-lg hover:bg-opacity-90 transition-all shadow-lg hover:shadow-xl w-full sm:w-auto">
+                        Fale conosco no WhatsApp
+                    </a>
+                </div>
             </div>
 
-            <div class="border-t border-verde/50 pt-8 flex flex-col md:flex-row justify-between items-center text-sm">
+            <div class="border-t border-verde/50 pt-8 flex justify-center text-sm text-center">
                 <p>&copy; 2026 Clínica Piastrine. Todos os direitos reservados.</p>
-                <p class="mt-2 md:mt-0">Desenvolvido com excelência.</p>
             </div>
         </div>
     </footer>
