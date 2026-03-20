@@ -58,15 +58,32 @@
                 <a href="#servicos" class="text-sm font-medium hover:text-marrom transition-colors">Especialidades</a>
                 <a href="#parceiros" class="text-sm font-medium hover:text-marrom transition-colors">Equipe</a>
                 <a href="#depoimentos" class="text-sm font-medium hover:text-marrom transition-colors">Resultados</a>
+                <a href="#contato" class="text-sm font-medium hover:text-marrom transition-colors">Contato</a>
             </nav>
             <a href="#contato" class="hidden md:inline-block bg-marrom text-bege px-6 py-2 rounded-md font-medium hover:bg-opacity-90 transition-all shadow-lg hover:shadow-xl">
                 Agendar Consulta
             </a>
-            <button class="md:hidden text-verde text-2xl">
+            <button id="mobile-menu-btn" class="md:hidden text-verde text-2xl">
                 <i class="fa-solid fa-bars"></i>
             </button>
         </div>
     </header>
+
+    <div id="mobile-menu" class="fixed inset-0 bg-[#FAFAFA] z-[60] flex flex-col items-center justify-center transform translate-x-full transition-transform duration-300">
+        <button id="close-menu-btn" class="absolute top-6 right-6 text-marrom text-3xl">
+            <i class="fa-solid fa-xmark"></i>
+        </button>
+        <nav class="flex flex-col items-center gap-10 mb-12">
+            <a href="#sobre" class="font-serif text-3xl text-marrom mobile-link">Sobre</a>
+            <a href="#servicos" class="font-serif text-3xl text-marrom mobile-link">Especialidades</a>
+            <a href="#parceiros" class="font-serif text-3xl text-marrom mobile-link">Equipe</a>
+            <a href="#depoimentos" class="font-serif text-3xl text-marrom mobile-link">Resultados</a>
+            <a href="#contato" class="font-serif text-3xl text-marrom mobile-link">Contato</a>
+        </nav>
+        <a href="#contato" class="bg-marrom text-bege px-8 py-4 rounded-full font-medium tracking-wide shadow-lg mobile-link uppercase text-sm hover:bg-opacity-90 transition-all">
+            Agendar Consulta
+        </a>
+    </div>
 
     <section class="relative h-screen flex items-center justify-center pt-20">
         <div class="absolute inset-0 w-full h-full bg-[url('https://images.unsplash.com/photo-1629909613654-28e377c37b09?q=80&w=2068&auto=format&fit=crop')] bg-cover bg-center bg-no-repeat"></div>
@@ -308,6 +325,27 @@
                 header.classList.remove('shadow-md');
                 header.classList.replace('bg-bege', 'glass-effect');
             }
+        });
+
+        // Toggle do Menu Mobile
+        const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+        const closeMenuBtn = document.getElementById('close-menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+        const mobileLinks = document.querySelectorAll('.mobile-link');
+
+        mobileMenuBtn.addEventListener('click', () => {
+            mobileMenu.classList.remove('translate-x-full');
+        });
+
+        closeMenuBtn.addEventListener('click', () => {
+            mobileMenu.classList.add('translate-x-full');
+        });
+
+        // Fechar menu ao clicar em qualquer link
+        mobileLinks.forEach(link => {
+            link.addEventListener('click', () => {
+                mobileMenu.classList.add('translate-x-full');
+            });
         });
     </script>
 </body>
