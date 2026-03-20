@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="pt-BR" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clínica Piastrine | Saúde Integrativa e Estética Avançada</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        bege: '#E9E3CB',
+                        verde: '#003B39',
+                        marrom: '#8B6B4D',
+                    },
+                    fontFamily: {
+                        sans: ['Montserrat', 'sans-serif'],
+                        serif: ['Playfair Display', 'serif'],
+                    }
+                }
+            }
+        }
+    </script>
+
+    <style>
+        /* Custom Utilities for Premium Look */
+        .glass-effect {
+            background: rgba(233, 227, 203, 0.85);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+        }
+        .text-shadow {
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+        }
+    </style>
+</head>
+<body class="font-sans bg-bege text-verde antialiased">
+
+    <header class="fixed w-full top-0 z-50 transition-all duration-300 glass-effect">
+        <div class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <div class="flex items-center gap-2">
+                <img src="img/piastrine verde.png" alt="Logo Clínica Piastrine" class="h-10 w-auto">
+            </div>
+            <nav class="hidden md:flex gap-8">
+                <a href="#sobre" class="text-sm font-medium hover:text-marrom transition-colors">Sobre</a>
+                <a href="#servicos" class="text-sm font-medium hover:text-marrom transition-colors">Especialidades</a>
+                <a href="#parceiros" class="text-sm font-medium hover:text-marrom transition-colors">Equipe</a>
+                <a href="#depoimentos" class="text-sm font-medium hover:text-marrom transition-colors">Resultados</a>
+            </nav>
+            <a href="#contato" class="hidden md:inline-block bg-marrom text-bege px-6 py-2 rounded-md font-medium hover:bg-opacity-90 transition-all shadow-lg hover:shadow-xl">
+                Agendar Consulta
+            </a>
+            <button class="md:hidden text-verde text-2xl">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+        </div>
+    </header>
+
+    <section class="relative h-screen flex items-center justify-center pt-20">
+        <div class="absolute inset-0 w-full h-full bg-[url('https://images.unsplash.com/photo-1629909613654-28e377c37b09?q=80&w=2068&auto=format&fit=crop')] bg-cover bg-center bg-no-repeat"></div>
+        <div class="absolute inset-0 bg-verde/60 mix-blend-multiply"></div>
+        <div class="absolute inset-0 bg-gradient-to-b from-transparent to-bege/90"></div>
+        
+        <div class="relative z-10 container mx-auto px-6 text-center max-w-4xl" data-aos="fade-up" data-aos-duration="1000">
+            <h1 class="font-serif text-4xl md:text-6xl text-bege font-bold leading-tight mb-6 text-shadow">
+                Saúde, Bem-Estar e Estética: Tudo Integrado Para Cuidar de Você
+            </h1>
+            <p class="text-lg md:text-xl text-bege mb-10 font-light text-shadow">
+                Tecnologia de ponta e humanização em um só lugar. A excelência em saúde estética no coração de Ipatinga.
+            </p>
+            <a href="#contato" class="inline-block bg-marrom text-bege px-8 py-4 rounded-md font-medium text-lg hover:bg-opacity-90 transition-all transform hover:-translate-y-1 shadow-xl hover:shadow-2xl">
+                Agendar Avaliação de Diagnóstico
+            </a>
+        </div>
+    </section>
+
+    <section class="py-20 bg-bege">
+        <div class="container mx-auto px-6">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <div class="text-center p-6 bg-white rounded-xl shadow-sm hover:shadow-md transition-shadow" data-aos="fade-up" data-aos-delay="100">
+                    <div class="w-16 h-16 mx-auto bg-verde/10 text-verde rounded-full flex items-center justify-center mb-4 text-2xl">
+                        <i class="fa-solid fa-microscope"></i>
+                    </div>
+                    <h3 class="font-serif text-xl font-semibold mb-2 text-verde">Ciência Médica</h3>
+                    <p class="text-sm text-gray-600">Embasamento científico em cada procedimento para garantir resultados reais e seguros.</p>
+                </div>
+                <div class="text-center p-6 bg-white rounded-xl shadow-sm hover:shadow-md transition-shadow" data-aos="fade-up" data-aos-delay="200">
+                    <div class="w-16 h-16 mx-auto bg-verde/10 text-verde rounded-full flex items-center justify-center mb-4 text-2xl">
+                        <i class="fa-regular fa-heart"></i>
+                    </div>
+                    <h3 class="font-serif text-xl font-semibold mb-2 text-verde">Atendimento Personalizado</h3>
+                    <p class="text-sm text-gray-600">Cuidado individualizado, entendendo as necessidades únicas do seu corpo e metabolismo.</p>
+                </div>
+                <div class="text-center p-6 bg-white rounded-xl shadow-sm hover:shadow-md transition-shadow" data-aos="fade-up" data-aos-delay="300">
+                    <div class="w-16 h-16 mx-auto bg-verde/10 text-verde rounded-full flex items-center justify-center mb-4 text-2xl">
+                        <i class="fa-solid fa-list-check"></i>
+                    </div>
+                    <h3 class="font-serif text-xl font-semibold mb-2 text-verde">Protocolos Exclusivos</h3>
+                    <p class="text-sm text-gray-600">Terapias avançadas e exclusivas da Clínica Piastrine, aliando tecnologia e saúde.</p>
+                </div>
+                <div class="text-center p-6 bg-white rounded-xl shadow-sm hover:shadow-md transition-shadow" data-aos="fade-up" data-aos-delay="400">
+                    <div class="w-16 h-16 mx-auto bg-verde/10 text-verde rounded-full flex items-center justify-center mb-4 text-2xl">
+                        <i class="fa-solid fa-users-viewfinder"></i>
+                    </div>
+                    <h3 class="font-serif text-xl font-semibold mb-2 text-verde">Avaliação Multidisciplinar</h3>
+                    <p class="text-sm text-gray-600">Uma visão 360º da sua saúde, integrando diferentes especialidades para o melhor resultado.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="sobre" class="py-24 bg-white">
+        <div class="container mx-auto px-6">
+            <div class="flex flex-col lg:flex-row items-center gap-16">
+                <div class="lg:w-1/2 relative" data-aos="fade-right">
+                    <div class="absolute inset-0 bg-marrom translate-x-4 translate-y-4 rounded-lg -z-10"></div>
+                    <img src="https://images.unsplash.com/photo-1622253692010-333f2da6031d?q=80&w=1964&auto=format&fit=crop" alt="Dr. Daniel Calais" class="rounded-lg shadow-xl w-full object-cover h-[500px]">
+                </div>
+                <div class="lg:w-1/2" data-aos="fade-left">
+                    <h4 class="text-marrom font-semibold tracking-widest uppercase text-sm mb-2">Sobre o Especialista</h4>
+                    <h2 class="font-serif text-4xl text-verde mb-6 leading-tight">Dr. Daniel Calais &<br>Clínica Piastrine</h2>
+                    <p class="mb-4 text-gray-600 leading-relaxed">
+                        A Clínica Piastrine nasceu do desejo de transformar a visão tradicional da estética. Sob a liderança do <strong>Dr. Daniel Calais</strong>, nossa missão é unir o melhor da medicina preventiva, estética funcional e bem-estar em um ecossistema completo no coração de Ipatinga.
+                    </p>
+                    <p class="mb-8 text-gray-600 leading-relaxed">
+                        Acreditamos que a verdadeira beleza reflete a saúde que cultivamos por dentro. Nossa trajetória é marcada pelo refinamento técnico, adoção de tecnologias de ponta e um olhar humano que respeita a individualidade de cada paciente, garantindo longevidade e resultados naturais.
+                    </p>
+                    <div class="flex items-center gap-4">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/12/User_icon_2.svg/1024px-User_icon_2.svg.png" alt="Assinatura" class="h-12 opacity-50 grayscale">
+                        <div>
+                            <p class="font-serif font-bold text-verde text-lg">Dr. Daniel Calais</p>
+                            <p class="text-sm text-marrom">Diretor Técnico Clínico</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="servicos" class="py-24 bg-bege">
+        <div class="container mx-auto px-6 text-center">
+            <h4 class="text-marrom font-semibold tracking-widest uppercase text-sm mb-2" data-aos="fade-up">Alta Performance</h4>
+            <h2 class="font-serif text-4xl text-verde mb-16" data-aos="fade-up">Serviços em Destaque</h2>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="group relative overflow-hidden rounded-xl shadow-lg cursor-pointer" data-aos="fade-up" data-aos-delay="100">
+                    <img src="https://images.unsplash.com/photo-1633681926022-84c23e8cb2d6?q=80&w=2070&auto=format&fit=crop" alt="Terapia Capilar" class="w-full h-80 object-cover transition-transform duration-700 group-hover:scale-110">
+                    <div class="absolute inset-0 bg-gradient-to-t from-verde/90 to-transparent"></div>
+                    <div class="absolute bottom-0 left-0 w-full p-6 text-left transform translate-y-4 group-hover:translate-y-0 transition-transform duration-300">
+                        <h3 class="font-serif text-2xl text-bege mb-2">Terapia Capilar</h3>
+                        <p class="text-bege/80 text-sm opacity-0 group-hover:opacity-100 transition-opacity duration-300">Protocolos avançados para saúde do couro cabeludo e estímulo ao crescimento natural dos fios.</p>
+                    </div>
+                </div>
+
+                <div class="group relative overflow-hidden rounded-xl shadow-lg cursor-pointer" data-aos="fade-up" data-aos-delay="200">
+                    <img src="https://images.unsplash.com/photo-1583324113626-70df0f4deaab?q=80&w=1932&auto=format&fit=crop" alt="Tratamento de Feridas" class="w-full h-80 object-cover transition-transform duration-700 group-hover:scale-110">
+                    <div class="absolute inset-0 bg-gradient-to-t from-verde/90 to-transparent"></div>
+                    <div class="absolute bottom-0 left-0 w-full p-6 text-left transform translate-y-4 group-hover:translate-y-0 transition-transform duration-300">
+                        <h3 class="font-serif text-2xl text-bege mb-2">Tratamento de Feridas</h3>
+                        <p class="text-bege/80 text-sm opacity-0 group-hover:opacity-100 transition-opacity duration-300">Abordagem clínica especializada para cicatrização acelerada e recuperação tecidual.</p>
+                    </div>
+                </div>
+
+                <div class="group relative overflow-hidden rounded-xl shadow-lg cursor-pointer" data-aos="fade-up" data-aos-delay="300">
+                    <img src="https://images.unsplash.com/photo-1512290923902-8a9f81dc236c?q=80&w=2070&auto=format&fit=crop" alt="Harmonização Facial" class="w-full h-80 object-cover transition-transform duration-700 group-hover:scale-110">
+                    <div class="absolute inset-0 bg-gradient-to-t from-verde/90 to-transparent"></div>
+                    <div class="absolute bottom-0 left-0 w-full p-6 text-left transform translate-y-4 group-hover:translate-y-0 transition-transform duration-300">
+                        <h3 class="font-serif text-2xl text-bege mb-2">Harmonização Facial Integrativa</h3>
+                        <p class="text-bege/80 text-sm opacity-0 group-hover:opacity-100 transition-opacity duration-300">Realce de traços com naturalidade, utilizando preenchedores e bioestimuladores de excelência.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="parceiros" class="py-24 bg-white">
+        <div class="container mx-auto px-6">
+            <div class="text-center max-w-2xl mx-auto mb-16" data-aos="fade-up">
+                <h4 class="text-marrom font-semibold tracking-widest uppercase text-sm mb-2">Cuidado Completo</h4>
+                <h2 class="font-serif text-4xl text-verde mb-4">Serviços com Profissionais Independentes</h2>
+                <p class="text-gray-600">Nossa estrutura abriga especialistas de diversas áreas para garantir que sua jornada de saúde e estética seja completa e integrada.</p>
+            </div>
+
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+                <div class="border border-bege p-8 rounded-xl hover:bg-bege/30 transition-colors" data-aos="zoom-in" data-aos-delay="100">
+                    <i class="fa-solid fa-person-walking text-3xl text-marrom mb-4"></i>
+                    <h3 class="font-serif text-xl text-verde mb-2">Fisioterapia</h3>
+                    <p class="text-sm text-gray-500">Reabilitação, prevenção e estética funcional para o corpo.</p>
+                </div>
+                <div class="border border-bege p-8 rounded-xl hover:bg-bege/30 transition-colors" data-aos="zoom-in" data-aos-delay="200">
+                    <i class="fa-solid fa-brain text-3xl text-marrom mb-4"></i>
+                    <h3 class="font-serif text-xl text-verde mb-2">Psicologia</h3>
+                    <p class="text-sm text-gray-500">Acolhimento mental como pilar fundamental do bem-estar global.</p>
+                </div>
+                <div class="border border-bege p-8 rounded-xl hover:bg-bege/30 transition-colors" data-aos="zoom-in" data-aos-delay="300">
+                    <i class="fa-solid fa-tooth text-3xl text-marrom mb-4"></i>
+                    <h3 class="font-serif text-xl text-verde mb-2">Odontologia</h3>
+                    <p class="text-sm text-gray-500">Estética dental, alinhadores e saúde bucal de alta precisão.</p>
+                </div>
+                <div class="border border-bege p-8 rounded-xl hover:bg-bege/30 transition-colors" data-aos="zoom-in" data-aos-delay="400">
+                    <i class="fa-solid fa-apple-whole text-3xl text-marrom mb-4"></i>
+                    <h3 class="font-serif text-xl text-verde mb-2">Nutrição</h3>
+                    <p class="text-sm text-gray-500">Dietética avançada aliada aos seus objetivos estéticos e de longevidade.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="depoimentos" class="py-20 bg-verde text-bege">
+        <div class="container mx-auto px-6 text-center">
+            <div class="flex justify-center items-center mb-6 gap-2" data-aos="fade-up">
+                <i class="fa-brands fa-google text-3xl text-white"></i>
+                <div class="flex text-yellow-400 text-xl">
+                    <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                </div>
+            </div>
+            <h2 class="font-serif text-3xl mb-12" data-aos="fade-up">Avaliado como 'Excelente' no Google</h2>
+            
+            <div class="max-w-4xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-8">
+                <div class="bg-white/10 p-8 rounded-lg backdrop-blur-sm text-left" data-aos="fade-right">
+                    <p class="mb-4 italic">"Atendimento impecável! O Dr. Daniel e toda a equipe da Piastrine transmitem uma confiança enorme. A clínica é linda e os resultados dos meus tratamentos superaram as expectativas."</p>
+                    <div class="font-semibold text-marrom">- Mariana S.</div>
+                </div>
+                <div class="bg-white/10 p-8 rounded-lg backdrop-blur-sm text-left" data-aos="fade-left">
+                    <p class="mb-4 italic">"Encontrei na Clínica Piastrine tudo o que precisava em um só lugar. A abordagem integrativa faz toda a diferença. Profissionalismo e tecnologia de ponta em Ipatinga."</p>
+                    <div class="font-semibold text-marrom">- Ricardo M.</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer id="contato" class="bg-[#002826] text-bege/80 pt-20 pb-10 border-t border-verde">
+        <div class="container mx-auto px-6">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-16">
+                
+                <div class="lg:col-span-1">
+                    <div class="flex items-center gap-2 mb-6">
+                        <img src="img/piastrine branca.png" alt="Logo Clínica Piastrine" class="h-12 w-auto">
+                    </div>
+                    <p class="text-sm mb-6">Sua saúde, beleza e longevidade tratadas com a seriedade e o requinte que você merece.</p>
+                    <div class="flex gap-4">
+                        <a href="#" class="w-10 h-10 rounded-full bg-verde flex items-center justify-center hover:bg-marrom hover:text-white transition-colors"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="#" class="w-10 h-10 rounded-full bg-verde flex items-center justify-center hover:bg-marrom hover:text-white transition-colors"><i class="fa-brands fa-facebook-f"></i></a>
+                    </div>
+                </div>
+
+                <div>
+                    <h4 class="font-serif text-lg text-bege mb-6">Links Rápidos</h4>
+                    <ul class="space-y-3">
+                        <li><a href="#sobre" class="hover:text-marrom transition-colors">Sobre a Clínica</a></li>
+                        <li><a href="#servicos" class="hover:text-marrom transition-colors">Tratamentos</a></li>
+                        <li><a href="#parceiros" class="hover:text-marrom transition-colors">Corpo Clínico</a></li>
+                        <li><a href="#" class="hover:text-marrom transition-colors">Política de Privacidade</a></li>
+                    </ul>
+                </div>
+
+                <div class="lg:col-span-2">
+                    <h4 class="font-serif text-lg text-bege mb-6">Fale Conosco</h4>
+                    <ul class="space-y-4">
+                        <li class="flex items-start gap-4">
+                            <i class="fa-solid fa-location-dot mt-1 text-marrom"></i>
+                            <span>Rua Palmeiras, 30<br>Ipatinga, MG</span>
+                        </li>
+                        <li class="flex items-center gap-4">
+                            <i class="fa-solid fa-phone text-marrom"></i>
+                            <span>(31) 99999-9999</span>
+                        </li>
+                        <li class="flex items-center gap-4">
+                            <i class="fa-solid fa-envelope text-marrom"></i>
+                            <span>contato@clinicapiastrine.com.br</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="border-t border-verde/50 pt-8 flex flex-col md:flex-row justify-between items-center text-sm">
+                <p>&copy; 2026 Clínica Piastrine. Todos os direitos reservados.</p>
+                <p class="mt-2 md:mt-0">Desenvolvido com excelência.</p>
+            </div>
+        </div>
+    </footer>
+
+    <a href="https://wa.me/5531999999999" target="_blank" class="fixed bottom-6 right-6 bg-[#25D366] text-white w-14 h-14 rounded-full flex items-center justify-center text-3xl shadow-2xl hover:bg-[#20bd5a] hover:scale-110 transition-all z-50">
+        <i class="fa-brands fa-whatsapp"></i>
+    </a>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        // Inicializar Animações de Scroll
+        AOS.init({
+            once: true, // A animação ocorre apenas uma vez
+            offset: 100, // Deslocamento (em px) do ponto de gatilho original
+            duration: 800, // Duração dos valores de animação de 0 a 3000, com passo de 50ms
+        });
+
+        // Navbar Transparente / Sólida no Scroll
+        const header = document.querySelector('header');
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 50) {
+                header.classList.add('shadow-md');
+                header.classList.replace('glass-effect', 'bg-bege');
+            } else {
+                header.classList.remove('shadow-md');
+                header.classList.replace('bg-bege', 'glass-effect');
+            }
+        });
+    </script>
+</body>
+</html>
